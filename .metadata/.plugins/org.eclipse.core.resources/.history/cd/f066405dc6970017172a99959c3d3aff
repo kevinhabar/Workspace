@@ -1,0 +1,31 @@
+package com.timediff.service;
+
+import java.util.Date;
+
+import com.timediff.model.MyTicket;
+import com.timediff.model.TicketTime;
+
+public class CalculateTimeDifference implements ICalculateTimeDifference{
+
+	@Override
+	public Date getResolutionTime(MyTicket tkt) {
+		String ticketNumber=tkt.getTicketNumer();
+		return null;
+	}
+
+	@Override
+	public Date getTicketDEtails(MyTicket tktDetails) {
+		//HArdcoding TicketTime for instance.
+		TicketTime ticketTime= new TicketTime();
+		ticketTime.setTicketStartDate(new Date());
+		ticketTime.setTicketEndDate(new Date());
+
+		
+		tktDetails.setMytimeObjects(ticketTime);
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+
+}

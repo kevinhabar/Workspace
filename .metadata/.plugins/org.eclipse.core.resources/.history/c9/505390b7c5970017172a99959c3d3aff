@@ -1,0 +1,16 @@
+package com.timediff.service;
+
+import java.util.Date;
+
+import com.timediff.model.MyTicket;
+
+public class CalculateTimeDifference implements ICalculateTimeDifference{
+
+	@Override
+	public Date getResolutionTime(MyTicket tkt) {
+		return null;
+	}
+	
+	
+
+}
